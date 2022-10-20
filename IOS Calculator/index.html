@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <title>IOS Calculator</title>
+</head>
+<body>
+    <div class="cal-page">
+        <div class="cal-grid row-1">
+            <p>0</p>
+        </div>
+        <div class="cal-grid row-2">
+            <button value="C" onclick="getUserInput(this.value)" class="el-style">C</button>
+            <button value="backspace" onclick="getUserInput(this.value)" class="el-style arrow-left" >&#10229;</button>
+            <button value="÷" onclick="getUserInput(this.value)" class="el-style op-signs">&#247;</button>
+        </div>
+        <div class="cal-grid row-3">
+            <button value="7" onclick="getUserInput(this.value)" class="el-style">7</button>
+            <button value="8" onclick="getUserInput(this.value)" class="el-style">8</button>
+            <button value="9" onclick="getUserInput(this.value)" class="el-style">9</button>
+            <button value="*" onclick="getUserInput(this.value)" class="el-style op-signs">&#215;</button>
+        </div>
+        <div class="cal-grid row-4">
+            <button value="4" onclick="getUserInput(this.value)" class="el-style">4</button>
+            <button value="5" onclick="getUserInput(this.value)" class="el-style">5</button>
+            <button value="6" onclick="getUserInput(this.value)" class="el-style">6</button>
+            <button value="-" onclick="getUserInput(this.value)" class="el-style op-signs">&#8722;</button>     
+        </div>
+        <div class="cal-grid row-5">
+            <button value="1" onclick="getUserInput(this.value)" class="el-style">1</button>
+            <button value="2" onclick="getUserInput(this.value)" class="el-style">2</button>
+            <button value="3" onclick="getUserInput(this.value)" class="el-style">3</button>
+            <button class="el-style op-signs" value="+" onclick="getUserInput(this.value)">&#43;</button>         
+        </div>
+        <div class="cal-grid row-6">
+            <button class="el-style" value="0" onclick="getUserInput(this.value)">0</button>
+            <button class="el-style op-signs" value="=" onclick="getUserInput(this.value)">&#61;</button> 
+        </div>
+    </div>
+   
+    <script src="./index.js" ></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ball {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: plum;
+    position: relative;
+}

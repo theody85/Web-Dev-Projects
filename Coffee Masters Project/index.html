@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Coffee Masters</title>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="head-tag">
+                <img class="logo" src="./coffee_masters_logo.png" alt="Coffee Masters Logo"/>
+                <h3 class="header-text">Coffee Masters</h3>
+            </div>
+        </div>
+        <div class="order-details order">
+            <h2 class="items-header">ITEMS</h2>
+            <div class=" items item-one">
+                <h4>1x</h4>
+                <ul>
+                    <li><h3>Cappuccino</h3></li>
+                    <li><h4 class="item-prop"> Lite foam </h4></li>
+                </ul>
+                <h3>$3.35</h3>
+            </div>
+            <div class=" items item-two">
+                <h4>1x</h4>
+                <ul>
+                    <li><h3>Cappuccino</h3></li>
+                    <li><h4 class="item-prop"> Lite milk </h4></li>
+                    <li><h4 class="item-prop"> Double Expresso</h4></li>
+                </ul>
+                <h3>$3.85</h3>
+            </div>
+            <div class=" items item-three">
+                <h4>1x</h4>
+                <ul>
+                    <li><h3>Croissant</h3></li>
+                    <li><h4 class="item-prop"> Butter</h4></li>
+                </ul>
+                <h3>$2.45</h3>
+            </div>
+        </div>
+        <div class=" details">
+            <section class="order-details">
+                <h2 class="items-header section-title">NAME</h2>
+                <div class="section-group">
+                    <label for="name" class="input-label" >Name for order</label>
+                    <input id="name" class="section-input" placeholder="John Doe"/>
+                </div>
+            </section>
+            <section class="order-details">
+                <h2 class="items-header section-title">PAYMENT</h2>
+                <div class="section-group">
+                    <label for="name" class="input-label" >Card number</label>
+                    <input id="name" class="section-input" placeholder="0000-0000-0000-0000"/>
+                </div>
+                <div class="section-group ">
+                    <label for="name" class="input-label" >CCV number</label>
+                    <input id="name" class="section-input CCV-number" placeholder="000"/>
+                </div>
+            </section>
+
+        </div>
+        <div class="checkout-sum">
+            <div class="checkout-grid">
+                <ul>
+                    <li><h3>Subtotal: </h3></li>
+                    <li><h3>Tax: </h3></li>
+                    <li><h3 class="last-value">Total: </h3></li>
+                </ul>
+            </div>
+            <div class="checkout-grid  ">
+                <ul>
+                    <li><h3>$9.65</h3></li>
+                    <li><h3>$0.82</h3></li>
+                    <li><h3 class="last-value">$10.47 </h3></li>
+                </ul>
+            </div>
+
+        </div>
+        <button class="submit-button">
+            Place order
+        </button>
+
+    </div>
+    
+</body>
+</html>

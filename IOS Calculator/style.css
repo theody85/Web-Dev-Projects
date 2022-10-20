@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    
+}
+.cal-page {
+    width: 400px;
+    height: 590px;
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.cal-grid {
+    width: 400px;
+    height: 100px;
+    border-bottom: 2px solid black;
+}
+.cal-grid:last-child , .cal-grid:first-child{
+    border-bottom: none;
+}
+.row-1 {
+    height: 90px;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: monospace;
+    text-align: right; 
+    padding: 5px; 
+    line-height: 20px;
+}
+.row-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+.row-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.row-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.row-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.row-6 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+button {
+    border: none;
+    cursor: pointer
+}
+button:hover{
+    background-color: rgb(238, 238, 238);
+}
+.el-style {
+    border-right: 2px solid black;
+    text-align: center;
+    font-size: 40px;
+    line-height: 90px;
+    background-color: rgb(216,217,219);
+    font-family: sans-serif;
+}
+.op-signs {
+    color: white;
+    background-color: rgb(224,151,76);
+    border-right: none;
+}
+.op-signs:hover {
+    background-color: rgb(252, 195, 139)
+}

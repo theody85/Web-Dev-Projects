@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+.page {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: sans-serif
+}
+.page-rows {
+    width: auto;
+    
+}
+.header {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 3px solid black;
+    
+}
+.loader {
+    border: 15px solid rgb(155, 93, 229); /* Light grey */
+    border-top: 15px solid rgb(241, 91, 181);/* Blue */
+    border-right: 15px solid rgb(254, 228, 64);
+    border-bottom: 15px solid rgb(0, 187, 249);
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 0.2);
+    width: 50px;
+    height: 50px;
+    margin:  0 auto;
+    margin-top: 10px;
+    visibility: hidden;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.game-interface {
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 12px;
+    column-gap: 12px;
+    padding: 10px;
+    margin: 0px auto;
+}
+.letter-input {
+    height: 60px;
+    width: 60px;
+    border: 3px solid rgb(188, 187, 187);
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;  
+    color: transparent;
+    text-shadow: 0 0 0 black;
+    text-transform: uppercase;
+    caret-color: transparent;
+}
+.letter-input:focus {
+    outline: none;
+}
+.invalid {
+    animation: change-color 3s linear;
+}
+@keyframes change-color {
+    from {border-color: rgb(188, 187, 187);}
+    to {border-color: rgb(193, 0, 0);}
+}
+.highlight-yellow {
+    background-color: rgb(192, 134, 0);
+    color: white;
+}
+.highlight-green {
+    background-color: rgb(0, 99, 0);
+    color: white;
+}
+.highlight-grey {
+    background-color: grey;
+    color: white;
+}
+.winner {
+    animation: win 5s linear infinite;
+}
+@keyframes win {
+    0% {color: rgb(155, 93, 229);}
+    25% {color: rgb(241, 91, 181);}
+    50% {color: rgb(254, 228, 64);}
+    75% {color: rgb(0, 187, 249);}
+    100% {color: rgb(155, 93, 229);}
+   
+}
+.winner-inputs {
+    border-color: rgb(155, 93, 229); 
+    border-top-color: rgb(241, 91, 181);
+    border-right-color: rgb(254, 228, 64);
+    border-bottom-color: rgb(0, 187, 249);
+    animation: zero-to-360 5s linear infinite;
+}
+@keyframes zero-to-360 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(100deg);}
+}

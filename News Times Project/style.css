@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+.page-header {
+    grid-area: header;
+    font-family: "Snell Roundhand";
+    text-align: center;
+    font-size: 50px;
+    font-weight: normal;
+}
+.page-header h1 {
+    margin: 20px 20px;
+}
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: gray;
+    text-decoration: underline;
+    font-size: 25px;
+}
+.grid-nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Futura";   
+}
+.grid-nav {
+    grid-area: navbar;
+    border: 2px solid;
+
+   
+}
+
+.article-one {
+    grid-area: one;
+   
+}
+.article-two {
+    grid-area: two;
+}
+.article-three {
+    grid-area: three;
+    border-right: 2px solid;
+
+}
+.article-four {
+    grid-area: four;
+}
+.article-five {
+    grid-area: five;
+    border-right: 2px solid;
+}
+.grid-body {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "navbar navbar navbar"
+    "one two three"
+    "four five five";
+}
+
+.article {
+    padding: 15px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    display: block;
+}
+.article h2 {
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+}
+.img-art2 {
+    display: block;
+    max-height: 250px;
+    margin: 0 auto;
+}
