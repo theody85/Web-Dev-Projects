@@ -237,6 +237,10 @@ footer {
   nav {
     max-width: 1200px;
     margin: 0 auto;
+    /* background-color: var(--white);
+    position: fixed;
+    align-items: center; */
+
   }
 
   nav li:first-child {
