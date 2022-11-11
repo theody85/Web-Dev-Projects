@@ -2,4 +2,4 @@
 
 Web Development projects created with only HTML, CSS and vanilla JavaScript.
 
-|Project| Link|
+`|Project| Link|`
