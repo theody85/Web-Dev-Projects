@@ -50,7 +50,8 @@
 }
 button {
     border: none;
-    cursor: pointer
+    cursor: pointer;
+    background-color: rgb(251, 157, 16);
 }
 button:hover{
     background-color: rgb(238, 238, 238);
@@ -60,7 +61,7 @@ button:hover{
     text-align: center;
     font-size: 40px;
     line-height: 90px;
-    background-color: rgb(216,217,219);
+    background-color: rgb(48, 48, 48);
     font-family: sans-serif;
 }
 .op-signs {
